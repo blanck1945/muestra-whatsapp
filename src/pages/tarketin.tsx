@@ -28,7 +28,7 @@ function Tarjetin() {
     });
     try {
       const response = await axios.post(
-        "https://python-whatsapp-1933.herokuapp.com/app/send-message",
+        "https://python-whatsapp-1933.herokuapp.com/send-message",
         dataToSend
       );
       console.log(response);
