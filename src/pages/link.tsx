@@ -9,7 +9,7 @@ const LinkPage = () => {
     const sendUserMsg = async () => {
       try {
         const response = await axios.post(
-          "http://localhost:5000/app/send-user-message"
+          "https://python-whatsapp-1933.herokuapp.com/app/send-user-message"
         );
         console.log(response);
       } catch (err) {
