@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import "./App.css";
+import ActualPage from "./pages/actual";
+import LinkPage from "./pages/link";
+import Tarjetin from "./pages/tarketin";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Switch>
+          <Route exact path="/tarjetin" component={Tarjetin} />
+          <Route exact path="/link" component={LinkPage} />
+          <Route exact path="/actual" component={ActualPage} />
+        </Switch>
+      </BrowserRouter>
     </div>
   );
 }
 
 export default App;
+
+//50416625

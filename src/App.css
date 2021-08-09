@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  margin: auto;
+  margin-top: 12rem;
+  width: 40%;
+  height: 200px;
+  border-radius: 4rem;
+  padding: 6rem;
+  background-color: rgb(219, 219, 219);
+}
